@@ -1,0 +1,54 @@
+{
+  "name": "timeTest",
+  "type": "test",
+  "authors": [
+    "QmWvTKPJupSDRdR1HZZFw4ankb1io8BpgBq5eh3CyWg1Nd"
+  ],
+
+  "dependencies": [
+     {
+        "type": "language",
+        "name": "python",
+        "id": "QmRt6cEP2MsyxaAvyzHCH9FFwCn3NAtLRzbJdW4tVPBkSV",
+        "version": ">=3.6"
+     },
+     {
+        "name": "bash",
+        "type": "language",
+        "id": "QmUpBXwVhGpWzaKToh6jxQJQxGbJvZQxFWJ16nHK5WXsWd",
+        "version": "~4.4"
+     },
+     {
+      "version": "~2.54.1",
+      "summary": "GLib provides the core application building blocks for libraries and applications written in C. It provides the core object system used in GNOME, the main loop implementation, and a large set of utility functions for strings and common data structures.",
+      "type": "library",
+      "name": "glib2",
+      "id": "QmWgA54cNKkYfBdvjjfKQn2Cigqcz4HFCS5VpBtTVAvcN4",
+      "uid": "QmbHnPxDCbT3uiCv2qszVPHBudpYSugKEJUnjHJRbkX8Vi"
+     },
+     {
+      "version": "~1.18.1",
+      "summary": "NumPy is the fundamental package for array computing with Python.",
+      "type": "python-library",
+      "name": "numpy",
+      "id": "QmX8fe1jBgfp6m4WrLFxM2ppKbVG8zNJTVfxS4maUQq4DB",
+      "uid": "QmQA4zbhj2ztTwr3AWfF7ZHh3VNfppqxUWwb2v282m5UJF"
+    },
+    {
+      "version": "~4.2.0.32",
+      "summary": "Wrapper package for OpenCV python bindings.",
+      "type": "python-library",
+      "name": "opencv-python-headless",
+      "id": "QmbX3QGkmhkQCgJ1JbCvHEAo7iU2tX3VbjxLCgg86M8vmo",
+      "uid": "QmXXU8ihNd4JWu9TbaBwH98kYQGD6TtRp3px9uKq4f5BkV"
+    }
+
+    ],
+   "architecture": "x86-64",
+   "environment": "linux",
+   "run": {
+       "command": [
+       "/usr/bin/python3",
+      "{{ paths.mount }}/main.py"]
+   }
+}
